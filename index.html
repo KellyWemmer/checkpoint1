@@ -3,60 +3,147 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap" rel="stylesheet">    
     <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous'>
     <link rel="stylesheet" href="style.css">
     <title>Checkpoint1</title>
 
     <style>
-        *{
+        /* *{
             outline: 1px solid red;
-        }
-        .row div {
+        } */
+        /* .row div {
             height: 100px;
-        }
+        } */
     </style>
 
 </head>
 
 <body>
-    <section class="container-fluid">
-        <header class="row bg-primary"> <!--nav bar image and text-->
-            <div class="col-2 box"></div> 
-            <div class="col-10"></div>
+    <section class="container-fluid bg-secondary">
+        <header class="row bg-primary text-light sticky-top p-2"> <!--nav bar image and text-->
+            <div class="col title-font">
+                <h2><i class="mdi mdi-bookshelf"></i> Book Store</h2>
+            </div> 
         </header>
 
-        <div class="row"> <!--form and header/hero image-->
-            <img class="img-fluid" src="https://thiscatdoesnotexist.com/" alt="">
-            <div class="col-3"></div>
-            <div class="col-9"></div>
-        </div> 
-
-        <div class="row bg-primary"> <!--text and spill card-->
-            <div class="col-4"></div>
-            <div class="col-8"></div>
-        </div>
-
-        <div class="row"> <!--image and text/icon-->
-            <div class="col-3">
-                <img class="img-fluid" src="https://thiscatdoesnotexist.com/" alt="">
-            </div>
-            <div class="col-9"></div>
-        </div>
-
-        <div class="row"> <!--3 reviews, 1 with images/stars-->
-            <div class="col-4"></div>
-            <div class="col-4"></div> <!--large card with stars-->
-            <div class="col-4"></div>
-        </div>
-
-        <div class="row bg-primary"> <!--header and text-->
-            <div class="col-10"></div>
-        </div>
-
-        <div class="row"> <!--footer text--> 
-            <div class="col-6 m-auto"></div> <!--m-auto = equal margin on both sides-->
-        </div>
-    </section>
+        <main>
+            <div class="row hero-img"> <!--input form-->
+                <div class="col-12 col-md-3 p-3 text-light">
+                    <h6 class="p-2">Send me a Message</h6>
+                    <form>
+                        <div class="form-group m-2">
+                          <label for="exampleFormControlInput1">Name</label>
+                          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Jane Doe">
+                        </div>                    
+                        <div class="form-group m-2">
+                            <label for="exampleFormControlInput1">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group m-2">
+                            <label for="exampleFormControlInput1">Phone</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="555-555-5555">
+                        </div>                    
+                        <div class="form-group m-2">
+                          <label for="exampleFormControlTextarea1">Text Area</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3 form-check m-2">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">I am Awesome!</label>
+                          </div>
+                          <button type="submit" class="btn btn-primary m-2">Submit</button>
+                      </form>
+                </div>
     
+                <div class="text-over col-md-9 m-auto title-font text-light text-shadow align-self-start lead"><!--Text next to form-->
+                    <h1>Book Store</h1>                    
+                    <p><strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex aliquid voluptate architecto error iste. Rem cupiditate ratione, corrupti voluptate fugit quibusdam laudantium eius, saepe similique soluta voluptates non placeat reprehenderit!</strong></p>
+                </div>
+    
+                
+            </div> 
+    
+            <div class="row bg-primary p-2"> <!--text and spill card-->
+                <div class="order-2 order-md-1 col-12 col-md-4">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <h3>Lorem ipsum dolor.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti assumenda vero esse beatae iure, animi similique ducimus nesciunt maxime, delectus inventore accusantium libero veniam, non aut fugit at ipsum adipisci?</p>
+                </div>
+                <div class="order-1 order-md-2 col-12 col-md-8 d-flex justify-content-center mb-3"><!--spill card-->
+                    <div class="card spill-card shadow" style="width: 40rem;">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item"><i class="mdi mdi-wrench p-2"></i>Lorem ipsum dolor sit amet.</li>
+                          <li class="list-group-item"><i class="mdi mdi-phone p-2"></i>Lorem ipsum dolor sit amet.</li>
+                          <li class="list-group-item"><i class="mdi mdi-google-analytics p-2"></i>Lorem ipsum dolor sit amet.</li>
+                          <li class="list-group-item"><i class="mdi mdi-google-hangouts p-2"></i>Lorem ipsum dolor sit amet.</li>
+                          <li class="list-group-item"><i class="mdi mdi-google-assistant p-2"></i>Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+    
+            <div class="row mt-3"> <!--image and text with icon-->
+                <div class="col-12 col-md-3">
+                    <img class="img-fluid" src="https://images.unsplash.com/photo-1595123550384-b81222e23cf9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">                
+                </div>
+                <div class="col-12 col-md-9 mt-3">
+                    <h1><i class="mdi mdi-book-open-page-variant"></i> Lorem ipsum dolor sit.</h1>
+                    <h1>Lorem ipsum dolor sit amet.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus aliquid enim sequi qui, veniam similique totam fuga atque quidem maxime alias dolorum, tempora quae eius perferendis. Cum aliquid quibusdam reiciendis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic et aut sapiente cum amet, laboriosam, minus repellendus, similique quam inventore animi! Fugit, magni magnam aut ipsam at nisi consectetur impedit!
+                    </p>
+                    <button class="btn btn-primary">Click Me</button>
+                </div>
+            </div>
+            
+            <!--3 reviews-->
+            <div class="row"> 
+                <div class="order-2 order-md-1 col-12 col-md-4 d-flex align-items-center mt-2 mb-2">
+                    <div class="card shadow" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Lorem ipsum dolor sit.</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quasi, facere nesciunt in eligendi nisi quam corrupti cum placeat velit?</p>                
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Stars Image-->           
+                <div class="order-1 order-md-2 col-12 col-md-4 d-flex align-items-center mt-2 mb-2">
+                    <div class="card shadow" style="width: 18rem;">
+                        <img class="card-img-top" src="assets/Capture.JPG" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Lorem, ipsum dolor.!</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quasi, facere nesciunt in eligendi nisi quam corrupti cum placeat velit?</p>                
+                        </div>
+                    </div>
+                </div> 
+    
+                <div class="order-3 order-md-3 col-md-4 d-flex align-items-center mt-2 mb-2">
+                    <div class="card shadow" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quasi, facere nesciunt in eligendi nisi quam corrupti cum placeat velit?</p>                
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row bg-primary p-2"> <!--header and text-->
+                <div class="col-10">
+                    <h2>Something Really Important!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quisquam, voluptas laborum, non maiores labore amet, similique minus officiis aperiam quam provident nulla quidem nobis et odio qui? Eaque, sint!</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="row p-2"> <!--footer text--> 
+            <div class="col-12 col-md-4 m-auto text-center">
+                <p>Made with heart by Kelly Wemmer</p>
+            </div> <!--m-auto = equal margin on both sides-->
+        </footer>
+    </section>    
 </body>
 </html>
