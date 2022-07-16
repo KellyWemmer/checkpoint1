@@ -2,33 +2,37 @@
     transform: translateY(40px);
   }
 
-  .hero-img {
+.hero-img {
     min-height: 40vh;
     background-image: url(https://images.unsplash.com/photo-1535905748047-14b2415c77d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1150&q=80);
     background-size: cover;
     background-position: center;
   }
 
-  textarea {
+textarea {
     resize: none;
   }
 
-  .text-shadow {
+.text-shadow {
     text-shadow: 2px 2px 10px #2e2d2d;;
   }
 
-  .title-font {
+.title-font {
     font-family: 'Cabin', sans-serif;
   }
 
 
-  /* Does not spill out on medium px screens or smaller (mobile) */
-  @media (max-width: 768px) {
+/* Does edits for smaller (mobile) */
+  
+@media (max-width: 768px) {
+    .text-over {
+        display: none;
+    }    
+}    
+    
+@media (max-width: 768px) {
     .spill-card {
         transform: none;
-      }
-
-    
-  }
-
+    }    
+}
   
