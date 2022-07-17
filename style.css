@@ -9,7 +9,8 @@
     background-position: center;
   }
 
-textarea {
+  /* Keep form text box from being formatted */
+textarea { 
     resize: none;
   }
 
